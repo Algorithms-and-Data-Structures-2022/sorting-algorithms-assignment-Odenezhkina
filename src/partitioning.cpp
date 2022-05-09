@@ -73,7 +73,7 @@ namespace assignment {
 
     // возвращаем индекс опорного элемента
     //
-    return curr_pivot_index;
+    return stop;
   }
 
 }  // namespace assignment
