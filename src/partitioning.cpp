@@ -63,8 +63,8 @@ namespace assignment {
     // вычисление индекса опорного элемента и перемещение элементов по правилу разбиения
     for (int index = start; index < stop; index++) {
       if (arr[index] < pivot_value) {
-          curr_pivot_index++;
           std::swap(arr[index], arr[curr_pivot_index]);
+          curr_pivot_index++;
       }
     }
 
@@ -73,7 +73,7 @@ namespace assignment {
 
     // возвращаем индекс опорного элемента
     //
-    return stop;
+    return curr_pivot_index;
   }
 
 }  // namespace assignment
